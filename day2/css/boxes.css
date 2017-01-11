@@ -1,0 +1,16 @@
+#first{
+	border: 1px black solid
+}
+
+#second{
+	border: 10px blue dotted
+}
+
+#third{
+	border-color: green;
+	border-top-width: 3px;
+	border-bottom-width: 3px;
+	border-right-width: 1px;
+	border-left-width: 0px;
+	border-style: solid;
+}

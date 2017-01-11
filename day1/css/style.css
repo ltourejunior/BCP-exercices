@@ -1,9 +1,21 @@
 body{
 	background-color: #F8F8FF;
+	font-family: arial;
 }
 
 h1{
 	color: blue;
+	font-size: 4.5em;
+	font-weight: normal;
+	font-family: 'Source Code Pro', monospace;
+}
+
+h2{
+	font-variant: small-caps;
+}
+
+h1, h2, h3{
+	font-family: impact;
 }
 
 span{
@@ -17,6 +29,9 @@ a{
 
 p{
 	color: rgba(0,0,0,0.5);
+	font-family: 'Source Code Pro', monospace;
+	line-height: 1.2em;
+	border: 1px solid red
 }
 
 
@@ -68,6 +83,5 @@ a{
 
 #biography a:hover{
 	text-decoration: underline;
-	color: white;
 }
 
