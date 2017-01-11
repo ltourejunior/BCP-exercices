@@ -1,0 +1,72 @@
+body{
+	background-color: #F8F8FF;
+}
+
+h1{
+	color: blue;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+    }
+
+a{
+	font-weight: bold;
+}
+
+p{
+	color: rgba(0,0,0,0.5);
+}
+
+
+
+span{
+	background-color: LightBlue;
+}
+/*
+.red, h2{
+background-color: red;
+}
+
+.green{
+background-color: green;
+}
+
+p.blue{
+background-color: blue;
+}
+/* with p, the style is more specify than with p */
+/*
+a{
+	color: red;
+}
+
+.red a, .green a{
+	color: white;
+}
+
+.blue a{
+	color: yellow;
+}
+*/
+.seen.bad{
+	color: silver;
+}
+/* when you have to put a space in the class, put a "." instead of the space*/
+.seen.good{
+	color: LimeGreen;
+}
+
+.unseen{
+	color: #FA8072;
+}
+
+#biography a{
+	text-decoration: none;
+}
+
+#biography a:hover{
+	text-decoration: underline;
+}
+
