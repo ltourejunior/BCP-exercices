@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.pinkie{
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 50%;
+    min-width: 100px;
+    max-width: 150px;
+    /*minimum and maximum width when reducing or increasing the screen*/
+}
+
+.cabbie,
+.greenie{
+    box-shadow: 2px 2px 2px black;
+}
+.greenie{
+    background-color: darkseagreen;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    z-index: 100;
+}
+
+.cabbie{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 0;
+}
