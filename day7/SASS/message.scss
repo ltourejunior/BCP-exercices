@@ -1,0 +1,44 @@
+$padding: 12px 35px;
+$img_info: url("../img/info.png");
+$img_warning: url("../img/warning.png");
+$img_error: url("../img/error.png");
+$img_success: url("../img/success.png");
+
+@mixin box($box_color, $text_color){
+background-color: $box_color;
+color: $text_color;
+padding: $padding;
+width: 75%;
+border: 1px solid $box_color - #333333;
+border-right: none;
+margin: 3px;
+font: 14px serif;
+}
+
+@mixin img($select_image){
+    padding: $padding;
+    background-position: 1% center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-image: $select_image;
+}
+
+.info{
+    @include box(#BAE7EC, #5A8DA1);
+    @include img ($img_info);
+}
+
+.warning{
+    @include box(#ECE8BA, #CA9F46);
+    @include img ($img_warning);
+}
+
+.error{
+    @include box(#ECBABA, #BB252B);
+    @include img ($img_error);
+}
+
+.success{
+    @include box(#BBECBA, #5FB881);  
+    @include img ($img_success);
+}

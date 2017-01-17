@@ -1,0 +1,41 @@
+body {
+  background: lightgray;
+}
+p {
+  font-size: 16px;
+  padding: 1em;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul li {
+  font-size: 16px;
+}
+section {
+  font-size: 16px;
+}
+h1,
+h2 {
+  color: #ffa500;
+}
+section {
+  border-bottom: 1px solid #00008b;
+}
+.shadowed {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.5;
+}
+.padded {
+  padding: 1em;
+}
+.first a {
+  text-decoration: none;
+}
+.first p {
+  background-color: #e0e0e0;
+  border: 1px solid #7a7a7a;
+}
+.first p a {
+  color: #00008b;
+}

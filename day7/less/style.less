@@ -1,0 +1,62 @@
+@main_color: orange;
+@highlight_color:darkblue;
+@my_favourite_font_size:16px;
+
+body{
+    background: lightgray;//because I love it//
+}
+//inline coments//
+
+p{
+    font-size: @my_favourite_font_size;
+    .padded;
+    .shadowed;
+}
+
+ul li{
+    font-size: @my_favourite_font_size;
+}
+
+section{
+    font-size: @my_favourite_font_size;
+}
+
+h1, h2{
+    color: @main_color;
+}
+
+section{
+    border-bottom: 1px solid @highlight_color
+}
+
+.shadowed {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} //allow you to define a set of styles and then reuse them within other selectors//
+
+img{
+    .shadowed;
+    opacity: 0.5;
+} //to use it with all p and img//
+
+.padded{
+  padding: 1em;
+}
+
+.first{
+    a{
+        text-decoration: none;
+    }
+    p{
+        background-color: #e0e0e0;
+        @border_color: #e0e0e0 - #666666;
+        border: 1px solid @border_color;
+        a{
+            color: @highlight_color;
+        }
+    }
+}
+
+    
+
+
+

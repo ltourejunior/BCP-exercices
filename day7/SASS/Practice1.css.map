@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMA,mBAAU;EACN,MAAM,EAAE,yDACZ;;AAEA,QAAQ;EAEJ,UAAU,EAZE,OAAO;EAGnB,eAAe,EAAE,SAAc",
+"sources": ["Practice1.scss"],
+"names": [],
+"file": "Practice1.css"
+}

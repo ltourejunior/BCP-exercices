@@ -1,0 +1,48 @@
+$primary-color: #000000;
+$base_font_size: 14px;
+
+body{
+    color: $primary-color;
+}
+
+.bordered {
+    border: 1px solid red;
+}
+
+li{
+    @extend .bordered;
+    background-color: yellow;
+}
+
+@import'shadows'; //partials that allows you to import styles from others files that are already made//
+
+p{
+    @extend .z-depth-1;
+    line-height: 2em;
+}
+
+//exemple//
+@mixin red-border($width) {
+    border: $width solid red;
+}
+
+@mixin basic-box() {
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.box { @include red-border(10px);
+ }
+//exemple end//
+
+@mixin nice_line_spacing($font_size){
+    line-height: $font_size * 2;
+}
+
+p{
+    font-size: $base_font_size;
+    @include nice_line_spacing(14px);
+    padding: $base_font_size / 2;
+}
+
+

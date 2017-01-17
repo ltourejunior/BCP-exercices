@@ -1,0 +1,32 @@
+$primary_color: #C7C7C7;
+$Font_size: 14px;
+$padding: 12px 30px;
+
+@mixin img($width, $height){
+    padding: $padding;
+    background-position: 1% center;
+    background-size: $width $height;
+    background-repeat: no-repeat;
+    background-image: url("../img/info.png");
+}
+
+@mixin box-size($width){
+    padding: $padding;
+    margin:3px;
+    font-size: $Font_size;
+    width: $width;
+
+}
+
+.bordered {
+    border: 1px solid $primary_color - #111111;
+    border-right: none;
+}
+
+.message{
+    @extend .bordered;
+    background: $primary_color;
+    @include box-size(75%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include img (16px, 16px);
+}

@@ -22,3 +22,18 @@ body{
 p:first-letter{
     font-size: 30px;
 }
+
+.menu{
+    color: white;
+    background: black;
+    position: fixed;
+    top: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul ul{
+    list-style-image: url(http://classes.codingbootcamp.cz/assets/classes/8/bullet.png);
+}
