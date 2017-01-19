@@ -1,3 +1,5 @@
 node_modules
 .idea
 dist
+gulpfile.js
+package.json
