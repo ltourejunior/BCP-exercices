@@ -1,61 +1,67 @@
-.info {
-  background-color: #BAE7EC;
-  color: #5A8DA1;
-  padding: 12px 35px;
-  width: 75%;
-  border: 1px solid #87b4b9;
-  border-right: none;
-  margin: 3px;
-  font: 14px serif;
-  padding: 12px 35px;
-  background-position: 1% center;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-image: url("../img/info.png"); }
+/*
+Error: Undefined variable: "$message_border_darker_by".
+        on line 17 of /Users/mohamed/web/codingbootcamp/exercices/day7/SASS/message.scss
 
-.warning {
-  background-color: #ECE8BA;
-  color: #CA9F46;
-  padding: 12px 35px;
-  width: 75%;
-  border: 1px solid #b9b587;
-  border-right: none;
-  margin: 3px;
-  font: 14px serif;
-  padding: 12px 35px;
-  background-position: 1% center;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-image: url("../img/warning.png"); }
+12: .info{
+13:     @extend .message;
+14:     background-image: url("../img/info.png");
+15:     $bg_color: #BAE7EC;
+16:     background-color: $bg_color;
+17:     border-color: $bg_color - $message_border_darker_by;
+18: }
+19: 
+20: .warning{
+21:     @extend .message;
+22:     background-image: url("../img/warning.png");
 
-.error {
-  background-color: #ECBABA;
-  color: #BB252B;
-  padding: 12px 35px;
-  width: 75%;
-  border: 1px solid #b98787;
-  border-right: none;
-  margin: 3px;
-  font: 14px serif;
-  padding: 12px 35px;
-  background-position: 1% center;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-image: url("../img/error.png"); }
-
-.success {
-  background-color: #BBECBA;
-  color: #5FB881;
-  padding: 12px 35px;
-  width: 75%;
-  border: 1px solid #88b987;
-  border-right: none;
-  margin: 3px;
-  font: 14px serif;
-  padding: 12px 35px;
-  background-position: 1% center;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-image: url("../img/success.png"); }
-
-/*# sourceMappingURL=message.css.map */
+Backtrace:
+/Users/mohamed/web/codingbootcamp/exercices/day7/SASS/message.scss:17
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/operation.rb:73:in `_perform'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/private/var/folders/vk/q79cx2ld5zl3jhr66mbpm5y00000gn/T/AppTranslocation/D44CD83B-B896-4DC8-9C5C-2C18EEA3D225/d/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$message_border_darker_by\".\A         on line 17 of /Users/mohamed/web/codingbootcamp/exercices/day7/SASS/message.scss\A \A 12: .info{\A 13:     @extend .message;\A 14:     background-image: url(\"../img/info.png\");\A 15:     $bg_color: #BAE7EC;\A 16:     background-color: $bg_color;\A 17:     border-color: $bg_color - $message_border_darker_by;\A 18: }\A 19: \A 20: .warning{\A 21:     @extend .message;\A 22:     background-image: url(\"../img/warning.png\");"; }

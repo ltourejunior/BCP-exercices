@@ -1,18 +1,9 @@
-.bordered, .message {
-  border: 1px solid #b6b6b6;
-  border-right: none; }
-
 .message {
-  background: #C7C7C7;
-  padding: 12px 30px;
-  margin: 3px;
-  font-size: 14px;
-  width: 75%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 12px 30px;
-  background-position: 1% center;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-image: url("../img/info.png"); }
+  padding: 0.5em;
+  background-color: #cccccc;
+  border: 1px solid #666666;
+  margin-bottom: 0.25em;
+  background: #cccccc url(http://classes.codingbootcamp.cz/assets/classes/8/info.png) 1em center/1em auto no-repeat scroll;
+  padding-left: 3em; }
 
 /*# sourceMappingURL=Practice1.css.map */
