@@ -2,8 +2,18 @@ body {
 	background-color: black;
 	color: white; // always set the background color with the text color otherwise 
 	font-family: sans-serif;
+	
+	@media screen and (min-width: 400px) { // width of the screen
+		background-color: lightgrey;
+		color: black;
+	}
+  /* CSS code that only applies to screens and to window sizes wider or equal to 800px */
 }
+
 
 h1 {
 	color: skyblue;
+	@media screen and (min-width: 400px) { // width of the screen
+		font-size: 1.5em;
+	}
 }
