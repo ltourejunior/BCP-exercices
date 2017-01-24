@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/event.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <button class="button" id="black_button">Black</button>
+        <button class="button" id="silver_button" onclick="document.body.style.backgroundColor = 'silver';">Silver</button>
+        <button class="button" id="red_button">Red</button>
+        <button class="button" id="pink_button">Pink</button>
+        <button class="button" id="lime_button" onclick="document.body.style.backgroundColor = 'lime';">Lime</button>
+        <button class="button" id="white_button">White</button>
+
+        <p>Qui cupidatat ad sint cillum labore ex velit excepteur sint laboris. Dolore labore anim irure occaecat culpa incididunt et ex. Mollit ut ullamco do ea culpa. Ex sit elit laborum id dolore. Ut esse amet pariatur anim esse sint ea duis. Excepteur aliqua eu fugiat proident eu.</p>
+
+        <script>
+            document.body.style.backgroundColor = "blue";
+            var red = document.getElementById('red_button');
+            red.onclick=function(){
+            document.body.style.backgroundColor = "red";
+            };
+
+            var pink = document.getElementById('pink_button');
+            pink.onclick=function(){
+            document.body.style.backgroundColor = "pink";
+            };
+
+            var white = document.getElementById('white_button');
+            white.addEventListener("click", function(event) {
+            document.body.style.backgroundColor = "white";
+            this.style.color='blue';
+            document.body.style.color = "black";
+            });
+
+            var black = document.getElementById('black_button'); //find black button
+            black.addEventListener("click", function(event) { //attach an event to...
+            document.body.style.backgroundColor = "black"; //...change the background color
+            document.body.style.color = "white";//...change the text colot
+            });
+
+            function my_function(){
+                //code
+            }
+
+        </script>
+    
+    </body>
+</html>
