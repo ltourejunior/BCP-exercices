@@ -41,8 +41,11 @@ var value = null,
     type = typeof value;
     console.log(type);
 
-    var message_element = document.getElementById('message');
+    var message_element = document.getElementById('message');// in jquery you will write it like this : var message_element = $('#message')
     console.log(message_element.innerHTML);
     console.log(typeof message_element);
     message_element.innerHTML = 'New Text'
     console.log(message_element.innerHTML)
+
+var change
+console.log('change message');

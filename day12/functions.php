@@ -1,12 +1,15 @@
 <?php
 function get_current_year()
 {
-    return date('j. n. Y');
+    return date('Y');
 }
 
 function print_current_year()
 {
-    echo date('Y');
+    echo date('j. n. Y');
 }
 
+function render_page($page_file){
+    include'upper'
+}
 ?>
