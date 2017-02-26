@@ -1,0 +1,30 @@
+body {
+    background: lightskyblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+header{
+   font-size: 80px;
+}
+
+header, nav, .info{
+    text-align: center;
+}
+
+h1{
+    color: darkslategray;
+}
+
+footer{
+    bottom: 0;
+}
+
+.categories, .top-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: black;
+}

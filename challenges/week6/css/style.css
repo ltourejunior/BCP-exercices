@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white
+}
+
+body {
+    background: transparent url(img/theater-551797.png) center center/cover no-repeat no-repeat fixed;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 3em;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: deepskyblue;
+    font-size: 30px;
+}
+
+h2 {
+    font-style: italic;
+    color: lightskyblue;
+}
+
+h3 {
+    color: lightgoldenrodyellow;
+}
+
+img {
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+}
+
+.logo img {
+    width: 200px;
+    height: 75px;
+    padding: 5px;
+    margin: -20px;
+}
+
+
+/*CSS for homepage*/
+
+.header {
+    font-size: 40px;
+    height: 60px;
+    text-align: center;
+    background: transparent url(img/movie.svg) center center/200px 100px no-repeat no-repeat scroll;
+}
+
+.header a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.recent.news {
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+.hottest {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.hottest.movie {
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 50px;
+    height: 25em;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.hottest.actor {
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 50px;
+    height: 25em;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.hottest img {
+    height: 10em;
+    width: 10em;
+    padding: 6px;
+}
+
+
+/*CSSfor movie page*/
+
+.movie {
+    display: flex;
+    justify-content: space-around
+}
+
+.movie.informations {
+    padding: 20px;
+    height: 397px;
+    width: 300px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.movie.informations p {
+    margin-top: -10px;
+}
+
+.plot {
+    height: 125px;
+    overflow: scroll;
+    border-top: 1px dashed black;
+    padding: 1em;
+}
+
+.cast {
+    padding: 10px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em;
+    border: 3px solid gold;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.cast img {
+    height: 10em;
+    width: 10em;
+    padding: 6px;
+}
+
+.cast h2 {
+    text-align: center;
+    margin: 10px -10px;
+}
+
+.reviews {
+    border-top: 5px solid dodgerblue;
+}
+
+.reviews h3 {
+    color: palegoldenrod;
+    font-style: italic;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125, 126, 125);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=1);
+    /* IE6-9 */
+}
+
+
+/*CSS for actor page*/
+
+.actor.informations {
+    background-color: rgba(0, 255, 255, 0.1);
+    width: 50%;
+    padding: 1em;
+}
+
+.biography {
+    height: 175px;
+    overflow: scroll;
+    border-top: 1px dashed black;
+}
+
+.actor {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.actor.informations {
+    flex-direction: column;
+}
+
+.filmography {
+    width: auto;
+    margin-top: 3em;
+    border: 1px solid palegoldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.filmography img {
+    height: 10em;
+    width: 10em;
+    padding: 6px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filmography ol {
+    display: flex;
+}
+
+.filmography li {
+    margin-left: 4em;
+}
+
+.filmography h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
